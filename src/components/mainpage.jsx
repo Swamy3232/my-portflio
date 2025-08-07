@@ -361,17 +361,18 @@ export default function Home() {
             className="mt-6 md:mt-8 flex flex-col sm:flex-row justify-center gap-3 md:gap-4"
           >
             <motion.a
-              whileHover={{ 
-                scale: isMobile ? 1 : 1.05,
-                boxShadow: "0 10px 25px -5px rgba(234, 179, 8, 0.3)"
-              }}
-              whileTap={{ scale: 0.95 }}
-              href="/swamy.pdf"
-              download
-              className="flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-5 py-2 md:px-6 md:py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all text-sm md:text-base"
-            >
-              <FiDownload /> Download Resume
-            </motion.a>
+            whileHover={{ 
+              scale: 1.05,
+              boxShadow: "0 10px 25px -5px rgba(234, 179, 8, 0.3)"
+            }}
+            whileTap={{ scale: 0.95 }}
+            href="swamy.pdf"
+
+            download="Swamy_R_Resume.pdf"
+            className="flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all"
+          >
+            <FiDownload /> Download Resume
+          </motion.a>
             
             <motion.a
               whileHover={{ 
@@ -835,14 +836,14 @@ export default function Home() {
                 { 
                   icon: <FiLinkedin className="text-xl md:text-2xl text-yellow-400" />, 
                   title: "LinkedIn", 
-                  content: "linkedin.com/in/swamy-r-7103b0254",
+                  content: "Linkedin",
                   href: "https://www.linkedin.com/in/swamy-r-7103b0254"
                 },
                 { 
                   icon: <FiGithub className="text-xl md:text-2xl text-yellow-400" />, 
                   title: "GitHub", 
-                  content: "github.com/swamy85",
-                  href: "https://github.com/swamy85"
+                  content: "Github",
+                  href: "https://github.com/Swamy3232"
                 }
               ].map((contact, i) => (
                 <motion.a
